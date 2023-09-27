@@ -9,7 +9,7 @@
             if(gavesum <= 1200){
                 return 0;
             }
-            if(andenGave > 300 && julegave < 900){
+            if(andenGave > 300 && julegave <= 900){
                 return andenGave;
             }
             return gavesum;
