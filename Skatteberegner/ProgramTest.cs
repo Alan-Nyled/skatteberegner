@@ -6,7 +6,7 @@ public class BeregningTest {
 
         double skat = beregning.SkatVedJulegave(900, 0);
 
-        Assert.Equal(0, skat);
+        Assert.Equal(900, skat);
     }
     
     [Fact]
@@ -15,7 +15,7 @@ public class BeregningTest {
 
         double skat = beregning.SkatVedJulegave(1200, 0);
 
-        Assert.Equal(0, skat);
+        Assert.Equal(1200, skat);
     }
 
     [Fact]
@@ -24,7 +24,7 @@ public class BeregningTest {
 
         double skat = beregning.SkatVedJulegave(900, 300);
 
-        Assert.Equal(0, skat);
+        Assert.Equal(1200, skat);
     }
 
     [Fact]
@@ -42,7 +42,7 @@ public class BeregningTest {
 
         double skat = beregning.SkatVedJulegave(900, 500);
 
-        Assert.Equal(500, skat);
+        Assert.Equal(1400, skat);
     }
 
 }
